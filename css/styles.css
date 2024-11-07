@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    transition: width 0.3s;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.sidebar-header img {
+    max-width: 100px;
+    transition: max-width 0.3s;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.main-content {
+    margin-left: 250px;
+    transition: margin-left 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #444;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn {
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.system-name {
+    font-size: 18px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right input {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.user-menu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    background: #444;
+    right: 0;
+    top: 30px;
+    padding: 10px 0;
+}
+
+.user-menu ul li {
+    padding: 10px 20px;
+}
+
+.user-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user-menu:hover ul {
+    display: block;
+}
+
+.content {
+    padding: 20px;
+}
+
+.sidebar.collapsed {
+    width: 60px;
+}
+
+.sidebar.collapsed .sidebar-header img {
+    max-width: 30px;
+}
+
+.sidebar.collapsed .sidebar-menu li a {
+    opacity: 0;
+}
+
+.main-content.collapsed {
+    margin-left: 60px;
+}
+#parrafo {
+    background-color: #f8f9fa; /* Color gris claro */
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 150px; /* Altura mínima de la caja */
+    width: 100%; /* Ancho completo de la columna */
+}
+
+#nombreUsuario {
+    background-color: #f8f9fa; /* Color gris claro */
+    padding: 10px;
+    border-radius: 5px;
+}
